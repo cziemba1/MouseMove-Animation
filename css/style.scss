@@ -2,4 +2,34 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --font-funny: 'Sigmar One', cursive;
+    --color-header: #61d4b3;
+    --color-text: #fb8d62;
+    --color-pink: #fd2eb3;
+    --color-yellow: #fd2eb3;
+}
+
+#nav-wrapper ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    list-style-type: none;
+}
+
+.nav-link{
+    list-style-type: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .2rem;
+    font-size: 1.1rem;
+    font-family: var(--font-funny);
+    color: var(--color-header);
 }

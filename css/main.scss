@@ -1,0 +1,105 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, address, big, em, img, s, small, strike, strong, var, b, u, i, center, dl, dt, dd, ol, ul, li, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+{ margin: 0; 
+padding: 0; 
+border: 0; 
+font-size: 100%; 
+font-family: 'Lato', sans-serif;
+vertical-align: baseline; 
+box-sizing: border-box;
+--main-text: #cc0066;
+}
+
+a{
+    text-decoration: none;
+}
+
+#body-wrapper{
+    height: 100vh;
+    width: 100vw;
+}
+
+#mid-up-section{
+    width: 100%;
+    height: 50%;
+    border: 1px solid red;
+    #nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        #logo{
+            position: relative;
+            margin: 1rem 0 0 5rem;
+            a{
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--main-text);
+            }
+        }
+        ul{
+            display: flex;
+            margin: 1rem 5rem 1rem 1rem;
+            position: relative;
+            li{
+                list-style-type: none;
+                margin: 0 1rem;
+                .nav-link{
+                    color: black;
+                    font-size: 1.2rem;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    top:50%;
+    transform:translateY(50%);
+    width: 0;
+    left: 0;
+    height: .1rem;
+    background: currentColor;
+    transition: width 0.5s ease;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+    color: var(--main-text);
+}
+
+#intro{
+    position: absolute;
+    transform: translate(10rem, 7rem);
+    h1{
+        font-size: 2rem;
+        font-weight: normal;
+        color: black;
+    }
+    p{
+        font-size: 1.8rem;
+        font-weight: normal;
+        color: black;
+        overflow: hidden;
+    }
+}
+
+#intro-contact{
+    position: absolute;
+    transform: translate(68rem, 10rem);
+    a{
+        font-size: 1.2rem;
+        color: var(--main-text);
+        i{
+            margin-left: 1.1rem;
+            position: absolute;
+            top: .2rem;
+        }
+    }
+}
+
+.underline:hover{
+    background-color: black;
+    color: var(--main-text);
+}
